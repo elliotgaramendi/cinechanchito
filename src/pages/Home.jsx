@@ -1,45 +1,188 @@
 const Home = () => {
   return (
-    <section>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <>
+      <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://image.tmdb.org/t/p/w1280/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://image.tmdb.org/t/p/w1280/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://image.tmdb.org/t/p/w1280/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+      </section>
+      <section className="album py-5 bg-body-tertiary">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://image.tmdb.org/t/p/w1280/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
+                  class="card-img-top" alt="Movie" />
+                <div className="card-body">
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="btn-group"> <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div> <small className="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

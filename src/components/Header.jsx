@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 
 const Header = () => {
   return (
-    <header>
+    <header className="fixed-top">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
           <Link className="navbar-brand" to="/">CineChanchi</Link>
