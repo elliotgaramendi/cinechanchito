@@ -7,8 +7,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/about" element={<h1>About</h1>} />
         <Route path="/movies" element={<h1>Movies</h1>} />
+        <Route path="/about" element={<h1>About</h1>} />
       </Routes>
     </>
   )
