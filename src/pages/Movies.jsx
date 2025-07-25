@@ -6,7 +6,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -21,7 +21,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -36,7 +36,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -51,7 +51,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -66,7 +66,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -81,7 +81,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -96,7 +96,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -111,7 +111,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -126,7 +126,7 @@ const Movies = () => {
           <div className="col">
             <div className="card shadow-sm">
               <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg"
-                class="card-img-top" alt="Movie" />
+                className="card-img-top" alt="Movie" />
               <div className="card-body">
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
