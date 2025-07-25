@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const Home = () => {
-
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -23,34 +22,27 @@ const Home = () => {
   return (
     <>
       <section>
-        <div id="carouselExampleCaptions" className="carousel slide">
+        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="https://image.tmdb.org/t/p/w1280/7HqLLVjdjhXS0Qoz1SgZofhkIpE.jpg" className="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src="https://image.tmdb.org/t/p/w1280/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg" className="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src="https://image.tmdb.org/t/p/w1280/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg" className="d-block w-100 vh-100 object-fit-cover" alt="Movie" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
+            {
+              movies.slice(0, 3).map((movie, index) => {
+                const { id, backdrop_path, title, overview } = movie;
+                return (
+                  <div key={id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                    <img src={'https://image.tmdb.org/t/p/w1280' + backdrop_path} className="d-block w-100 vh-100 object-fit-cover" alt={title} />
+                    <div className="carousel-caption d-none d-md-block bg-body p-2 text-white bg-opacity-50 rounded">
+                      <h5>{title}</h5>
+                      <p>{overview}</p>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
